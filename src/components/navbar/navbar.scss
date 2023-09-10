@@ -1,0 +1,62 @@
+@import '../../style.scss';
+.nav-bar{
+  @include themify($themes) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: themed('bg');
+  height: 7vh;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: solid 2px themed('borderSecond');
+  .left{
+    padding: 10px;
+    margin-left: 50px;
+    .logo{
+      cursor: pointer;
+      h2{
+        color: themed('text');
+        span{
+          color:themed('textSecond');
+        }
+      }
+    }
+  }
+  .menu{
+    padding: 10px;
+    ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+      li{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: themed('text');
+        span{
+          padding: 5px;
+          margin-top: 3px;
+          color: themed('text');
+          font-weight: 700;
+        }
+        .icon{
+          color: themed('icon');
+        }
+      }
+    }
+  }
+  .right{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+    button{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+    }
+  }
+}
+}
