@@ -1,0 +1,69 @@
+$themes: (
+  light: (
+  bg: #E2C799,
+  bgSoft: #E4E4D0,
+  border: #352F44,
+  borderSecond: #252B48,
+  borderHover: #5B9A8B,
+  icon: #016A70,
+  iconSecond: #D8D9DA,
+  iconHover: #7C73C0,
+  text: #141E46,
+  textSecond:#016A70,
+  textThird:#3e3f3f,
+  textHover:#8EAC50,
+  button:#352F44,
+  buttonSecond:#FF8551,
+  buttonText:white,
+  buttonBorder:#06113C,
+  buttonHover:#F8E796,
+  card:#7960be,
+  cardSecond:#839B97,
+  cardHover:#F9FBE7,
+  ),
+  dark: (
+    bg: #E2C799,
+  bgSoft: #E4E4D0,
+  border: #352F44,
+  borderSecond: #252B48,
+  borderHover: #5B9A8B,
+  icon: #016A70,
+  iconSecond: #D8D9DA,
+  iconHover: #7C73C0,
+  text: #141E46,
+  textSecond:#016A70,
+  textThird:#3e3f3f,
+  textHover:#8EAC50,
+  button:#352F44,
+  buttonSecond:#FF8551,
+  buttonText:white,
+  buttonBorder:#06113C,
+  buttonHover:#F8E796,
+  card:#7960be,
+  cardSecond:#839B97,
+  cardHover:#F9FBE7,  
+  ),
+);
+
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), "#{$key}");
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value,
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
