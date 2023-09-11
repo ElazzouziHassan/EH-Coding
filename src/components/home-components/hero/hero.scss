@@ -14,7 +14,7 @@
       flex-direction: column;
       gap: 10px;
       h2{
-        font-size: 1.6rem;
+        font-size: 1.6vw;
         text-transform: uppercase;
         font-weight: bold;
         color: themed('text');
@@ -32,7 +32,7 @@
         gap: 10px;
         .list-text{
           color: themed('textThird');
-          font-size: 16px;
+          font-size: 1vw;
         }
         .list-icon{
           color: themed('textSecond');
@@ -48,7 +48,7 @@
         background-color: themed('button');
         color: themed('buttonText');
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 1.2vw;
       }
     }
     .right{
@@ -56,10 +56,11 @@
       align-items: center;
       justify-content: center;
       flex: 1;
+      height: 60vh;
       margin-left:10vw;
       img{
-        width: 40vw;
-        height: 60vh;
+        width: 90%;
+        height: 80%;
         border-radius: 10px;
         margin-top: 10px;
         mix-blend-mode: color-burn;
