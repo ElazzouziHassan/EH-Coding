@@ -31,21 +31,21 @@ function Navbar() {
               <span>HOME</span>
             </li>
           </Link>
-          <Link to='/about'> 
+          {/* <Link to='/about'>  */}
             <li>
               <CodeOutlinedIcon className="icon" />
               <span>ABOUT</span>
             </li>
-          </Link>
-          <Link to='/services'>            
+          {/* </Link> */}
+          {/* <Link to='/services'>             */}
             <li><EngineeringOutlinedIcon className="icon" /> <span>SERVICES</span></li>
-          </Link>
-          <Link to='/works'>            
+          {/* </Link> */}
+          {/* <Link to='/works'>             */}
             <li><TerminalOutlinedIcon className="icon" /> <span>WORKS</span></li>
-          </Link>
-          <Link to='resume'>           
+          {/* </Link> */}
+          {/* <Link to='resume'>            */}
             <li><BadgeOutlinedIcon className="icon" /> <span>RESUME</span></li>
-          </Link>
+          {/* </Link> */}
         </ul>
       </div>
       <div className="right">
@@ -54,11 +54,11 @@ function Navbar() {
             darkMode ? <LightModeOutlinedIcon className='icon'/> : <DarkModeOutlinedIcon className='icon'/>
           }
         </button>
-        <Link to="/contact">
+        {/* <Link to="/contact"> */}
           <button>
             <PermContactCalendarOutlinedIcon className='icon' />
           </button>
-        </Link>
+        {/* </Link> */}
       </div>     
     </div>
   )
