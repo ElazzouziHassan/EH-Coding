@@ -6,8 +6,9 @@ import Subhero from '../../components/home-components/sub-hero/Subhero'
 function Home() {
   return (
     <div className="home">
-      <Hero />
-      <Subhero/>
+      {/* <Hero /> */}
+      {/* <Subhero/> */}
+      <h1>COMMING SOON..</h1>
     </div>
   )
 }
