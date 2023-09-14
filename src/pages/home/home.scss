@@ -6,10 +6,9 @@
     align-items: center;
     justify-content: center;
     background-color: themed('bgSoft');
-    top: 0;
     height: calc(100vh - 7vh);
     h1{
-
+      color: themed('text');
     }
   }
 }
