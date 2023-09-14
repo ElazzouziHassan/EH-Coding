@@ -1,4 +1,5 @@
 import React from 'react'
+import './home.scss'
 import Hero from '../../components/home-components/hero/Hero'
 import Subhero from '../../components/home-components/sub-hero/Subhero'
 
