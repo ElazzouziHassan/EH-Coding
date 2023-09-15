@@ -19,6 +19,9 @@
         color: themed('text');
         span{
           color:themed('textSecond');
+          @include mobile{
+            display: none;
+          }
         }
       }
     }
@@ -40,6 +43,9 @@
           margin-top: 3px;
           color: themed('text');
           font-weight: 700;
+          @include mobile{
+            display: none;
+          }
         }
         .icon{
           color: themed('icon');
