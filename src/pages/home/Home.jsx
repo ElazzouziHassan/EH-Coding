@@ -8,7 +8,7 @@ function Home() {
     <div className="home">
       {/* <Hero /> */}
       {/* <Subhero/> */}
-      <h1>COMMING SOON..</h1>
+      <h1>COMMING SOON...</h1>
     </div>
   )
 }
