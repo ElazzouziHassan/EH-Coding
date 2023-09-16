@@ -36,7 +36,7 @@
       width: 100%;
       display: flex;
       justify-content: space-around;
-      
+
     }
     ul{
     display: flex;
@@ -59,6 +59,13 @@
         }
         .icon{
           color: themed('icon');
+          &:hover{
+            color: themed('iconHover');
+          }
+          @include mobile{
+            width: 28px;
+            height: 28px; 
+          }
         }
       }
     }
