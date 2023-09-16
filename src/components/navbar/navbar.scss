@@ -37,6 +37,14 @@
       display: flex;
       justify-content: space-around;
     }
+    @include tablet{
+      background-color: themed('bg');
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
     ul{
     display: flex;
     align-items: center;
@@ -56,6 +64,9 @@
           color: themed('text');
           font-weight: 700;
           @include mobile{
+            display: none;
+          }
+          @include tablet{
             display: none;
           }
         }
