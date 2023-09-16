@@ -30,7 +30,6 @@
   .menu{
     padding: 10px;
     @include mobile{
-      
       background-color: themed('bg');
       position: fixed;
       bottom: 0;
