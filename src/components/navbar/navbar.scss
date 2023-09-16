@@ -30,18 +30,21 @@
   .menu{
     padding: 10px;
     @include mobile{
+      
       background-color: themed('bg');
       position: fixed;
       bottom: 0;
       width: 100%;
       display: flex;
       justify-content: space-around;
-
     }
     ul{
     display: flex;
     align-items: center;
     gap: 50px;
+    @include mobile{
+      gap: 40px;
+    }
       li{
         cursor: pointer;
         display: flex;
