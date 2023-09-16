@@ -25,6 +25,15 @@
   }
   .menu{
     padding: 10px;
+    @include mobile{
+      background-color: #F1F1F1;
+      position: fixed;
+      bottom: 0;
+      height: 65px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
     ul{
     display: flex;
     align-items: center;
