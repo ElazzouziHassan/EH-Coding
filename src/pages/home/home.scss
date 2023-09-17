@@ -17,7 +17,6 @@
         "footer footer footer footer footer footer"
         ". . . . . .";
     }
-    
     .heading { 
       grid-area: heading; 
       width: 50vw;
@@ -34,7 +33,6 @@
       }
 
     }
-    
     .image { 
       grid-area: image;
       img{
@@ -45,7 +43,6 @@
         mix-blend-mode: color-burn;
       } 
     }
-    
     .description { 
       grid-area: description; 
       p{
@@ -74,7 +71,6 @@
         font-size: 1.2vw;
       }
     }
-    
     .footer { 
       grid-area: footer;
       display: flex;
