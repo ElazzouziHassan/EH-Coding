@@ -50,18 +50,30 @@
     
     .footer { 
       grid-area: footer;
+      display: flex;
+      align-items: center;
+      margin-top: 12vh;
+      gap: 70px;
       .hr{
+        width: 40vw;
         hr{
-
+          border: 10px solid black;
+          // width: 100%;
         }
       }
       .social-media{
+        display: flex;
+        align-items: center;
+        gap: 20px;
         a{
+          display: flex;
+          align-items: center;
+          gap: 5px;
           .s-icon{
 
           }
           span{
-
+            color: themed('text');
           }
           .github{
             color: black;
