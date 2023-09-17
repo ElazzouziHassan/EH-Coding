@@ -1,13 +1,39 @@
 @import '../../style.scss';
 .home{
   @include themify($themes){
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: themed('bgSoft');
-    height: calc(100vh - 7.2vh);
-    h1{
-      color: themed('textSecond');
+    padding: 10px;
+    .container {  display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 2.1fr 1fr 0.1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "heading heading heading image image image"
+        "description description description image image image"
+        "description description description image image image"
+        "footer footer footer footer footer footer"
+        ". . . . . .";
     }
+    
+    .heading { 
+      grid-area: heading; 
+      width: 50vw;
+
+    }
+    
+    .image { 
+      grid-area: image;
+      width: 50vw;
+      img{
+        width: 45vw;
+        height: 60vh;
+      } 
+    }
+    
+    .description { grid-area: description; }
+    
+    .footer { grid-area: footer; }
+    
   }
 }
