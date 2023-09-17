@@ -19,6 +19,8 @@
     .heading { 
       grid-area: heading; 
       width: 50vw;
+      h2{}
+      h3{}
 
     }
     
@@ -31,9 +33,44 @@
       } 
     }
     
-    .description { grid-area: description; }
+    .description { 
+      grid-area: description; 
+      p{
+        .list-icon{
+
+        }
+        .list-text{
+
+        }
+      }
+      input{
+
+      }
+    }
     
-    .footer { grid-area: footer; }
+    .footer { 
+      grid-area: footer;
+      .hr{
+        hr{
+
+        }
+      }
+      .social-media{
+        a{
+          .s-icon{
+
+          }
+          span{
+
+          }
+          .github{}
+          .linkedIn{}
+          .facebook{}
+          .twitter{}
+          .instagram{}
+        }
+      }
+    }
     
   }
 }
