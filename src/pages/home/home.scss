@@ -3,7 +3,8 @@
   @include themify($themes){
     background-color: themed('bgSoft');
     padding: 10px;
-    .container {  display: grid;
+    .container {  
+      display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 2.1fr 1fr 0.1fr;
       gap: 0px 0px;
@@ -26,7 +27,6 @@
     
     .image { 
       grid-area: image;
-      width: 50vw;
       img{
         width: 45vw;
         height: 60vh;
@@ -51,24 +51,27 @@
     .footer { 
       grid-area: footer;
       display: flex;
-      align-items: center;
-      margin-top: 12vh;
-      gap: 70px;
+  align-items: center;
+  // justify-content: space-between;
+  margin-top: 12vh;
+  gap: 70px;
+      
       .hr{
         width: 40vw;
+    // margin-left: 50px;
         hr{
           border: 10px solid black;
-          // width: 100%;
+      width: 100%;
         }
       }
       .social-media{
         display: flex;
-        align-items: center;
-        gap: 20px;
+    align-items: center;
+    gap: 20px;
         a{
           display: flex;
-          align-items: center;
-          gap: 5px;
+      align-items: center;
+      gap: 5px;
           .s-icon{
 
           }
