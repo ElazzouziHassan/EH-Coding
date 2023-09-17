@@ -63,11 +63,18 @@
           span{
 
           }
-          .github{}
-          .linkedIn{}
-          .facebook{}
-          .twitter{}
-          .instagram{}
+          .github{
+            color: black;
+          }
+          .linkedIn, .twitter{
+            color: rgb(26, 97, 169);
+          }
+          .facebook{
+            color: rgb(0, 72, 161);
+          }
+          .instagram{
+            color: purple;
+          }
         }
       }
     }
