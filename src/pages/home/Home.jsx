@@ -10,12 +10,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 function Home() {
   return (
     <div className="home">
-<<<<<<< HEAD
       <div class="container">
-=======
-      <h1>Coming SOON ...</h1>
-      {/* <div class="container">
->>>>>>> bc99ca2b86a360ee265551f028f75137a72ef449
         <div class="heading">
           <h2>
             Full Stack Web Developer & UI/UX Designer
