@@ -10,8 +10,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 function Home() {
   return (
     <div className="home">
-      <h1>Comming SOON ...</h1>
-      {/* <div class="container">
+      <div class="container">
         <div class="heading">
           <h2>
             Full Stack Web Developer & UI/UX Designer
@@ -88,7 +87,7 @@ function Home() {
               </a>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
