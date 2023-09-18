@@ -42,6 +42,7 @@
           margin-top: 10px;
           text-align: center;
           margin-top: 110px;
+          margin-left: 0;
         }
       }
       h3{
@@ -67,7 +68,7 @@
         width: 75%;
         height: 80%;
         border-radius: 10px;
-        margin-top: 10px;
+        margin-top: 20px;
         @include mobile{
           width: 95%;
           margin-top: 20px;
@@ -127,7 +128,7 @@
       grid-area: footer;
       display: flex;
       align-items: center;
-      margin-top: 12vh;
+      // margin-top: 12vh;
       gap: 70px;
 
       @include mobile{
