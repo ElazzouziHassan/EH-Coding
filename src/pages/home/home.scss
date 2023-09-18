@@ -67,12 +67,19 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        @include mobile{
+          gap: 2px;
+        }
         .list-icon{
           color: themed('textSecond');
         }
         .list-text{
           color: themed('textThird');
           font-size: 1vw;
+          @include mobile{
+            font-size: 12px;
+            font-weight: bold;
+          }
         }
       }
       input{
@@ -86,6 +93,11 @@
         color: themed('buttonText');
         border-radius: 5px;
         font-size: 1.2vw;
+        @include mobile{
+          width: 20vw;
+        font-size: 14px;
+
+        }
       }
     }
     .footer { 
