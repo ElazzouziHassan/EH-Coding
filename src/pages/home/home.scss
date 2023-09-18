@@ -129,7 +129,6 @@
         gap: 20px;
         @include mobile{
           display: flex;
-          flex-direction: column;
           gap: 5px;
         }
         a{
@@ -139,6 +138,9 @@
           .s-icon{ }
           span{
             color: themed('text');
+            @include mobile{
+              display: none;
+            }
           }
           .github{ color: black; }
           .linkedIn, .twitter{ color: rgb(26, 97, 169); }
