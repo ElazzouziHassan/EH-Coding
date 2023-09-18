@@ -2,7 +2,7 @@
 .home{
   @include themify($themes){
 
-    // background-color: themed('bgSoft');
+    background-color: themed('bgSoft');
     padding: 10px;
     .container {  
       display: grid;
@@ -16,20 +16,34 @@
         "description description description image image image"
         "footer footer footer footer footer footer"
         ". . . . . .";
+      @include mobile{
+        display: flex;
+        flex-direction: column;
+      }
     }
     .heading { 
       grid-area: heading; 
       width: 50vw;
+      @include mobile{
+        width: auto;
+      }
       h2{
         font-size: 1.6vw;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: bolder;
         color: themed('text');
+        @include mobile{
+          font-size: 20px;
+        }
       }
       h3{
         margin-left: 10px;
         color: themed('text');
         margin-bottom: 10px;
+        @include mobile{
+          font-size: 16px;
+          margin-left: 0;
+        }
       }
 
     }
@@ -41,6 +55,9 @@
         border-radius: 10px;
         margin-top: 10px;
         mix-blend-mode: color-burn;
+        @include mobile{
+          width: 100%;
+        }
       } 
     }
     .description { 
@@ -77,17 +94,32 @@
       align-items: center;
       margin-top: 12vh;
       gap: 70px;
+      @include mobile{
+        gap: 0;
+        margin-top: 2vh;
+      }
       .hr{
         width: 40vw;
+        @include mobile{
+          width: 0;
+        }
         hr{
           border: 10px solid black;
           width: 100%;
+          @include mobile{
+            display: none;
+          }
         }
       }
       .social-media{
         display: flex;
         align-items: center;
         gap: 20px;
+        @include mobile{
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
         a{
           display: flex;
           align-items: center;
