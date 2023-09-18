@@ -38,6 +38,8 @@
           font-size: 16px;
           padding: 5px;
           margin-top: 10px;
+          text-align: center;
+          margin-top: 110px;
         }
       }
       h3{
@@ -48,6 +50,7 @@
           font-size: 16px;
           margin-left: 0;
           padding: 5px;
+          text-align: center;
         }
       }
 
@@ -63,28 +66,36 @@
         margin-top: 10px;
         @include mobile{
           width: 95%;
+          margin-top: 20px;
         }
       } 
     }
     .description { 
       grid-area: description; 
+      @include mobile{
+        display: none;
+      }
       p{
         margin-left: 10px;
         display: flex;
         align-items: center;
         gap: 10px;
         @include mobile{
-          gap: 2px;
+          gap: 5px;
         }
         .list-icon{
           color: themed('textSecond');
+          @include mobile{
+            width: 15px;
+          }
         }
         .list-text{
           color: themed('textThird');
           font-size: 1vw;
           @include mobile{
-            font-size: 12px;
+            font-size: 16px;
             font-weight: bold;
+            margin-top: 5px;
           }
         }
       }
@@ -112,9 +123,11 @@
       align-items: center;
       margin-top: 12vh;
       gap: 70px;
+
       @include mobile{
         gap: 0;
-        margin-top: 2vh;
+        margin-top: 10vh;
+        justify-content: center;
       }
       .hr{
         width: 40vw;
@@ -135,13 +148,18 @@
         gap: 20px;
         @include mobile{
           display: flex;
-          gap: 5px;
+          gap: 10px;
         }
         a{
           display: flex;
           align-items: center;
           gap: 5px;
-          .s-icon{ }
+          .s-icon{
+            @include mobile{
+              width: 40px;
+              height: 40px;
+            }
+           }
           span{
             color: themed('text');
             @include mobile{
