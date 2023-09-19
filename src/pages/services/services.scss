@@ -1,0 +1,10 @@
+@import '../../style.scss';
+.services{
+  @include themify($themes){
+    position: sticky;
+    top: 7vh;
+    height: calc(100vh - 7.2vh);
+    background-color: themed('bgSoft');
+
+  }
+}
