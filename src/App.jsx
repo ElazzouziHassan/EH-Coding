@@ -5,7 +5,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 // import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
 // import Resume from "./pages/resume/Resume";
-// import Services from "./pages/services/Services";
+import Services from "./pages/services/Services";
 // import Works from "./pages/works/Works";
 import Navbar from "./components/navbar/Navbar"
 
@@ -28,7 +28,7 @@ function App() {
       children: [
         { path: '/', element: <Home /> },
         // { path: '/about', element: <About /> },
-        // { path: '/services', element: <Services/> },
+        { path: '/services', element: <Services/> },
         // { path: '/works', element: <Works /> },
         // { path: '/resume', element: <Resume /> },
         // { path: '/contact', element: <Contact /> },
