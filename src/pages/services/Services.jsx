@@ -4,7 +4,8 @@ import './services.scss'
 function Services() {
   return (
     <div className="services">
-      <h1>Services page</h1>
+      <h2>Services</h2>
+      
     </div>
   )
 }
