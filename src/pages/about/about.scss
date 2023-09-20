@@ -1,6 +1,18 @@
 @import '../../style.scss';
 .about{
   @include themify($themes){
+    @keyframes fadeIn {
+      from {top: 20%; opacity: 0;}
+      to {top: 100; opacity: 1;}
+      
+    }
+    
+    @-webkit-keyframes fadeIn {
+      from {top: 20%; opacity: 0;}
+      to {top: 100; opacity: 1;}
+      
+    }
+    
     
   }
 }
