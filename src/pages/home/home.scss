@@ -35,13 +35,13 @@
         font-weight: bolder;
         color: themed('text');
         margin-left: 50px;
-        margin-top: 20px;
+        margin-top: 50px;
         @include mobile{
           font-size: 16px;
           padding: 5px;
           margin-top: 10px;
           text-align: center;
-          margin-top: 20px;
+          margin-top: 10px;
           margin-left: 0;
         }
       }
@@ -70,7 +70,7 @@
         margin-top: 20px;
         @include mobile{
           width: 95%;
-          margin-top: 20px;
+          margin-top: 10px;
         }
       } 
     }
