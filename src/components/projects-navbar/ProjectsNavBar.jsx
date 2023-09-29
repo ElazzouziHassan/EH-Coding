@@ -1,8 +1,11 @@
 import React from 'react'
+import './projects-nav-bar.scss'
 
 function ProjectsNavBar() {
   return (
-    <div>ProjectsNavBar</div>
+    <div className="projects-nav-bar">
+      <h1>Project navigation bar component !</h1>
+    </div>
   )
 }
 
