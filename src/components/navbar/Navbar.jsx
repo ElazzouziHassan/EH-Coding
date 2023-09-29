@@ -11,7 +11,6 @@ import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
 import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
 import PermContactCalendarOutlinedIcon from '@mui/icons-material/PermContactCalendarOutlined';
 
-
 function Navbar() {
 
   const { toggle, darkMode } = useContext(DarkModeContext);
