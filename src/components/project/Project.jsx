@@ -1,8 +1,11 @@
 import React from 'react'
+import './project.scss';
 
 function Project() {
   return (
-    <div>Project</div>
+    <div className="project">
+      <h1>project component !</h1>
+    </div>
   )
 }
 
