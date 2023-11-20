@@ -9,7 +9,6 @@ import Services from "./pages/services/Services";
 import Works from "./pages/works/Works";
 import Navbar from "./components/navbar/Navbar"
 
-
 function App() {
 
   const { darkMode } = useContext(DarkModeContext);
