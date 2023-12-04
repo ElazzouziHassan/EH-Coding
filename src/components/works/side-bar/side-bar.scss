@@ -1,0 +1,7 @@
+@import '../../../style.scss';
+.side-bar{
+  @include themify($themes){
+    display: flex;
+    flex-direction: column;
+  }
+}
