@@ -3,9 +3,14 @@ import './side-bar.scss'
 
 function Sidebar() {
   return (
-    <>
-      <h1>Side bar component!</h1>
-    </>
+    <div className="side-bar">
+      <button>All Projects</button>
+      <button>UI/ UX Design</button>
+      <button>Frontend</button>
+      <button>Backend</button>
+      <button>APIs</button>
+      <button>Others</button>
+    </div>
   )
 }
 
