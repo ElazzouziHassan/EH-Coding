@@ -1,5 +1,10 @@
 import React from 'react'
 import './home.scss'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Home() {
   return (
@@ -25,11 +30,11 @@ function Home() {
           </div>
           <div className="bottom">
             <ul>
-              <li><a href="#facebook">Facebook</a></li>
-              <li><a href="#instagram">instagram</a></li>
-              <li><a href="#twitter">twitter</a></li>
-              <li><a href="#Linkedin">Linkedin</a></li>
-              <li><a href="#github">Linkedin</a></li>
+              <li><a href="#facebook"><FacebookIcon></FacebookIcon></a></li>
+              <li><a href="#instagram"><InstagramIcon></InstagramIcon></a></li>
+              <li><a href="#twitter"><TwitterIcon></TwitterIcon></a></li>
+              <li><a href="#Linkedin"><LinkedInIcon></LinkedInIcon></a></li>
+              <li><a href="#github"><GitHubIcon></GitHubIcon></a></li>
             </ul>
           </div>
         </div>
