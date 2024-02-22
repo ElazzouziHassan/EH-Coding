@@ -10,6 +10,10 @@
     .hero-section{
       display: flex;
       align-items: center;
+      height: 100%;
+      gap: 20px;
+      margin: 0 60px;
+      // background-color: black;
       .left-side{
         flex: 1;
         .me{
@@ -24,16 +28,22 @@
       }
       .right-side{
         flex: 1;
+        
         .top{
-          img{
 
+          img{
+            width: 90%;
+            height: 90%;
+            border-radius: 10px;
           }
         }
         .bottom{
           ul{
+            display: flex;
+            align-items: center;
             li{
               a{
-                
+
               }
             }
           }
