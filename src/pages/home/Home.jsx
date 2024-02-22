@@ -19,7 +19,20 @@ function Home() {
             <button>Resume</button>
           </div>
         </div>
-        <div className="right-side">Right Side</div>
+        <div className="right-side">
+          <div className="top">
+            <img src="https://hackernoon.com/images/f2px36fy.gif" alt="El azzouzi Hassan, Wizardy" />
+          </div>
+          <div className="bottom">
+            <ul>
+              <li><a href="#facebook">Facebook</a></li>
+              <li><a href="#instagram">instagram</a></li>
+              <li><a href="#twitter">twitter</a></li>
+              <li><a href="#Linkedin">Linkedin</a></li>
+              <li><a href="#github">Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )
