@@ -30,6 +30,7 @@ function Home() {
           </div>
           <div className="bottom">
             <ul>
+              <li>Social Media : </li>
               <li><a href="#facebook"><FacebookIcon></FacebookIcon></a></li>
               <li><a href="#instagram"><InstagramIcon></InstagramIcon></a></li>
               <li><a href="#twitter"><TwitterIcon></TwitterIcon></a></li>
