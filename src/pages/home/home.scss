@@ -12,6 +12,15 @@
       align-items: center;
       .left-side{
         flex: 1;
+        .me{
+          span{}
+          h2{}
+          p{}
+        }
+        .short-description{
+          p{}
+          button{}
+        }
       }
       .right-side{
         flex: 1;
