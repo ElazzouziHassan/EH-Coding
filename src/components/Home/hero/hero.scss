@@ -1,0 +1,7 @@
+@import "../../../style.scss";
+
+.hero{
+  @include themify($themes){
+    margin: 0 4dvw;
+  }
+}
