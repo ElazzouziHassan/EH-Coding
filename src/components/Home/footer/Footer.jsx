@@ -1,8 +1,10 @@
-import React from 'react'
+import "./footer.scss";
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className="footer">
+      this is the footer of the home page
+    </div>
   )
 }
 
