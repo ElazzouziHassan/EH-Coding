@@ -9,7 +9,9 @@ import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 import TerminalOutlinedIcon from '@mui/icons-material/TerminalOutlined';
 import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
 import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
-import PermContactCalendarOutlinedIcon from '@mui/icons-material/PermContactCalendarOutlined';
+import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
+// uncomment this for blog feeds in the navbar!
+// import RssFeedIcon from '@mui/icons-material/RssFeed';
 
 function Navbar() {
 
@@ -42,6 +44,10 @@ function Navbar() {
           <Link to='/works'>            
             <li><TerminalOutlinedIcon className="icon" /> <span>WORKS</span></li>
           </Link>
+          {/* blog tobe developed later */}
+          {/* <Link to='/blog'>            
+            <li><RssFeedIcon className="icon" /> <span>BLOG</span></li>
+          </Link> */}
           <Link to='resume'>           
             <li><BadgeOutlinedIcon className="icon" /> <span>RESUME</span></li>
           </Link>
@@ -55,7 +61,7 @@ function Navbar() {
         </button>
         <Link to="/contact">
           <button>
-            <PermContactCalendarOutlinedIcon className='icon' />
+            <PermContactCalendarIcon className='icon' />
           </button>
         </Link>
       </div>     
